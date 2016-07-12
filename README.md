@@ -54,3 +54,16 @@ MIT License
 [RapidXML](http://rapidxml.sourceforge.net/) library by Marcin Kalicinski and licensed under the MIT License
 
 [Gzstream](http://www.cs.unc.edu/Research/compgeom/gzstream/) library by Deepak Bandyopadhyay and Lutz Kettner and licensed under LGPL 2.1
+
+
+## Log
+
+Jul 12 Odd behavior in language field (008) parsing was observed with
+Kungliga. It turned out that the last digits 38/39 are sometimes
+missing in Kungliga 008 field, so the parser was changed to start
+reading from the beginning of the line instead of the end of the line
+(as in other catalogs). This yields recognizable language codes for
+99.88% of the entries now.
+
+
+
