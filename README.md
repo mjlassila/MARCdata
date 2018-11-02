@@ -43,10 +43,10 @@ Input files should be placed in folder 'data'. Output goes there as well.
 
 ### Holdings
 
-	Name exported Voyager holdings as holdings.xml.
+Name exported Voyager holdings as holdings.xml.
 
-	Selected fieldset is based on MARC fields used in Jyväskylä University Library holdings records, 
-	so your mileage might vary. 
+Selected fieldset is based on MARC fields used in Jyväskylä University Library holdings records, 
+so your mileage might vary. 
 
 	make holdings
 	./holdings
