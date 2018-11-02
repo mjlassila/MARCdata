@@ -25,5 +25,10 @@ MARCdata.o: MARCdata.cpp MARCdata.hpp
 gzstream.o: gzstream/gzstream.cpp gzstream/gzstream.h
 	$(CXX) -c gzstream/gzstream.cpp
 
+holdings: holdings.o MARCdata.o gzstream.o
+	$(CXX) -lz -o holdings holdings.o MARCdata.o gzstream.o
+holdings.o: holdings.cpp MARCdata.hpp
+	$(CXX) -c holdings.cpp
+
 clean:
-	rm estc estc.o fennica fennica.o kungliga kungliga.o MARCdata.o gzstream.o
+	rm estc estc.o fennica fennica.o kungliga kungliga.o MARCdata.o gzstream.o holdings holdings.o
