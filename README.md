@@ -41,11 +41,25 @@ Input files should be placed in folder 'data'. Output goes there as well.
 	make cerl
 	./cerl
 
+### Holdings
+
+	Name exported Voyager holdings as holdings.xml.
+
+	Selected fieldset is based on MARC fields used in Jyväskylä University Library holdings records, 
+	so your mileage might vary. 
+
+	make holdings
+	./holdings
+
 ## Author
 
 [Niko Ilomäki](https://github.com/NVI/)
 
-Contributions by [Leo Lahti](https://github.com/antagomir/)
+Contributions by 
+
+* [Leo Lahti](https://github.com/antagomir/)
+* [Matti Lassila](https://github.com/mjlassila/)
+
 
 ## License
 
